@@ -1,5 +1,3 @@
-@bs.module("fs") external read: (string, string) => string = "readFileSync"
-
 open Tablecloth
 
 type choice =
@@ -81,7 +79,7 @@ let printTee = any => {
 
 let input0 = `BFFFBBFRRR` // 567
 let input1 = `FFFBBBFRRR` // 119
-let inputX = read("./day05.txt", "utf-8")->Js.String.trim->Js.String2.split("\n")
+let inputX = "day05.txt"->Utils.readFile->Js.String2.split("\n")
 
 let a = inputX
 // |> Array.map(~f=printTee)

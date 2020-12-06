@@ -1,21 +1,10 @@
-# ReScript Project Template
+# Advent of Code, mostly ReScript edition
 
-The only official ReScript starter template.
+## Install, build and run
 
-## Installation
-
-```sh
-npm install
-```
-
-## Build
-
+- Install: `npm install`
 - Build: `npm run build`
 - Clean: `npm run clean`
 - Build & watch: `npm run start`
-
-## Run
-
-```sh
-node src/Demo.bs.js
-```
+- Run: `node src/<dayXX>.bs.js`,
+- Run & watch: `npx nodemon src/<dayXX>.bs.js`
